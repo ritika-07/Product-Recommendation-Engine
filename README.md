@@ -13,10 +13,10 @@ Here communities will be formed on the basis of the information obtained from us
 
 ## Frontend
 ### Home Page
-![index.html](https://github.com/ritika-07/Product-Recommendation-Engine/index.gif)
+![index.html](https://github.com/ritika-07/Product-Recommendation-Engine/blob/master/index.gif)
 ### About Page
-![about.html](https://github.com/ritika-07/Product-Recommendation-Engine/about.gif)
+![about.html](https://github.com/ritika-07/Product-Recommendation-Engine/blob/master/about.gif)
 
 ## Important links
-- Gephi Visualisation: https://ritika-07.github.io/Product-Recommendation-Engine/network/#
-- Dataset: https://archive.ics.uci.edu/ml/datasets/Online+Retail#
+- ![Gephi Visualisation](https://ritika-07.github.io/Product-Recommendation-Engine/network/#)
+- ![Dataset](https://archive.ics.uci.edu/ml/datasets/Online+Retail#)
