@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recommender</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="../static/css/all.min.css" rel="stylesheet" />
+	<link href="../static/css/style.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="../static/img/t2.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="../static/img/cart.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">E-commerce Website</h1>
+								<h6 class="tm-site-description">Collaborative Product Recommendation Engine</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="about" class="tm-nav-link active">About</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">About the Project</h2>
+				<p class="col-12" style="text-align: justify;"> A product recommendation engine is essentially a software that records an user’s 
+					actions on e-commerce websites and analyses the data obtained to make product suggestions that might interest 
+					the user. This can enhance the customer experience and even boost sales of the e-commerce website that makes 
+					use of it. Community detection can be used to identify products that are most likely to be bought together 
+					thereby facilitating a product recommendation engine. Here communities will be formed on the basis of the 
+					information obtained from user purchase patterns.
+					</p>
+			</header>
+
+			<div class="tm-container-inner tm-featured-image">
+				<div class="row">
+					<div class="col-12">
+						<div class="placeholder-2">
+							<div class="parallax-window-2" data-parallax="scroll" data-image-src="../static/img/t3.jpg"></div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-features">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-database tm-feature-icon"></i>
+							<p class="tm-feature-description">The dataset used contains all the transactions of a year for an online retail based in the UK.</p>
+							<a href="https://archive.ics.uci.edu/ml/datasets/Online+Retail#" target="_blank" class="tm-btn tm-btn-primary">Dataset</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-code tm-feature-icon"></i>
+							<p class="tm-feature-description">The source code for the recomendation model, graph visualisation and frontend can be found on my GitHub.</p>
+							<a href="https://github.com/ritika-07/Product-Recommendation-Engine" target="_blank" class="tm-btn tm-btn-success">Code</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-link tm-feature-icon"></i>
+							<p class="tm-feature-description">Gephi visualisations to analyse the detected communities of products can be found here.</p>
+							<a href="https://ritika-07.github.io/Product-Recommendation-Engine/network/#" target="_blank" class="tm-btn tm-btn-danger">Graph</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-history">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-history-inner">
+							<img src="../static/img/performance.png" alt="Image" class="img-fluid tm-history-img" />
+							<div class="tm-history-text"> 
+								<h4 class="tm-history-title">Performance of the Model</h4>
+								<p class="tm-mb-p"> The coverage of a partition is the ratio of the number of intra-community edges to the total number of edges in the graph. Modularity compares the number of edges inside a cluster 
+									with the expected number of edges that one would find in the cluster if the network were a random network with 
+									the same number of nodes and where each node keeps its degree, but edges are otherwise randomly attached.
+									The performance of a partition is the ratio of the number of intra-community edges plus inter-community non-edges with the total number 
+									of potential edges.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Made with &#10084;&#65039; by Ritika</a></p>
+		</footer>
+	</div>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/parallax.min.js"></script>
+</body>
+</html>

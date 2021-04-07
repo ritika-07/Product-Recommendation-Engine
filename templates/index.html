@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recommender</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="../static/css/style.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="../static/img/t2.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="../static/img/cart.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">E-commerce Website</h1>
+								<h6 class="tm-site-description">Collaborative Product Recommendation Engine</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about" class="tm-nav-link" >About</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to my E-commerce Website</h2>
+				<p class="col-12 text-center">Please select upto one item and click on 'Add' to display the recommended products. Happy shopping!</p>
+			</header>
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Kitchen</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Decor</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-kitchen" class="tm-gallery-page">
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/jar.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center">Black Tea, Coffee, Sugar Jars</h4>
+								<p class="tm-gallery-description">Make storage in your kitchen accessible and aesthetic using our custom jars. </p>
+								<p class="tm-gallery-price">&#8377;800 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='BLACK TEA,COFFEE,SUGAR JARS') }}';">Add</button></p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/cake.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center">Mini Cake Stand with Hanging Cakes</h4>
+								<p class="tm-gallery-description">Baking at home can be made professional using our cake stands with hanging cakes.</p>
+								<p class="tm-gallery-price">&#8377;650 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='MINI CAKE STAND WITH HANGING CAKES') }}';">Add</button></p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/lunch.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center">Lunch Bag Red<br>Retrospot</h4>
+								<p class="tm-gallery-description">Buy these trendy lunch bags to keep your food looking good and feeling fresh</p>
+								<p class="tm-gallery-price">&#8377;500 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='LUNCH BAG RED RETROSPOT') }}';">Add</button></p>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 1 -->
+				
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-decor" class="tm-gallery-page hidden">
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/tlight.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center"> Cinnamon Set of 9 T-Lights</h4>
+								<p class="tm-gallery-description">These candles are a decor must have and will make your room smell as fresh as cinnamon</p>
+								<p class="tm-gallery-price">&#8377; 500 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='CINAMMON SET OF 9 T-LIGHTS') }}';">Add</button></p>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/wreath.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center">Garland with Stars and Bells</h4>
+								<p class="tm-gallery-description">Decorate your space with garlands of stars and bells to set a festive mood</p>
+								<p class="tm-gallery-price">&#8377;200 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='GARLAND WITH STARS AND BELLS') }}';">Add</button></p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-4 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="../static/img/star.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title text-center">Christmas Star Decoration</h4>
+								<p class="tm-gallery-description">A beautiful Christmas tree needs a beautiful star sitting at its top to spread the cheer.</p>
+								<p class="tm-gallery-price">&#8377;250 <button type="button" class="tm-btn tm-btn-success tm-add" onclick="window.location.href='{{ url_for( 'predict', product='CHRISTMAS TREE STAR DECORATION') }}';">Add</button></p>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+
+			</div>
+			<h4 class="col-12 text-center tm-section-title tm-reco">Recommendations</h4>
+				<p class="col-12 text-center">Based on the added item, you may also like..</p> <br>
+				<p class="col-12 text-center"> 
+					<span class="reco" style="margin: 10px !important; 
+					padding: 5px !important;
+					box-shadow: 2px 2px 10px #00000045 !important;"> {{ob1}} </span> 
+					
+					<span class="reco" style="margin: 10px !important; 
+					padding: 5px !important;
+					box-shadow: 2px 2px 10px #00000045 !important;"> {{ob2}} </span>
+				
+					<span class="reco" style="margin: 10px !important; 
+					padding: 5px !important;
+					box-shadow: 2px 2px 10px #00000045 !important;"> {{ob3}} </span> <br></p>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Made with &#10084;&#65039; by Ritika</a></p>
+		</footer>
+	</div>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
