@@ -12,6 +12,10 @@ Here communities will be formed on the basis of the information obtained from us
 - Gephi
 
 ## Frontend
+### Home Page
+![index.html](https://github.com/ritika-07/Product-Recommendation-Engine/index.gif)
+### About Page
+![about.html](https://github.com/ritika-07/Product-Recommendation-Engine/about.gif)
 
 ## Important links
 - Gephi Visualisation: https://ritika-07.github.io/Product-Recommendation-Engine/network/#
