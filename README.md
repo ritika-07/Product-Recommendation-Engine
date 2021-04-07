@@ -15,7 +15,7 @@ Here communities will be formed on the basis of the information obtained from us
 ### Home Page
 ![index.html](https://github.com/ritika-07/Product-Recommendation-Engine/blob/master/index.gif)
 ### About Page
-![About Page](https://github.com/ritika-07/Product-Recommendation-Engine/blob/master/about.png)
+<img src="https://github.com/ritika-07/Product-Recommendation-Engine/blob/master/about.png" width=350>
 
 ## Important links
 - Gephi Visualisation: https://ritika-07.github.io/Product-Recommendation-Engine/network/#
